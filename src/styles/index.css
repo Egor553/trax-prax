@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #fff6f8;
+  color: #2a0a18;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, rgba(254, 224, 238, 0.55), transparent 40%),
+    linear-gradient(180deg, #fff6f8 0%, #f9edf0 100%);
+}
+
+button {
+  font: inherit;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #e84b95, #ff87ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glossy-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 224, 238, 0.6));
+  backdrop-filter: blur(16px);
+  box-shadow: 0 18px 38px rgba(60, 15, 40, 0.12);
+}
